@@ -1,0 +1,39 @@
+.header {
+    padding: 27px 25px;
+    border-bottom: 1px solid #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo-icon {
+    width: 55px;
+    height: 26px;
+    top: 0;
+    left: 0;
+}
+
+.js-mobilMenu {
+    display: none;
+}
+
+.navigation {
+    margin-top: 6px;
+}
+
+.navigation__nav-list {
+    margin: 0;
+    padding: 0;
+}
+.navigation__list-item {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+.navigation__list-item:last-child {
+    margin-right: 0;
+}
