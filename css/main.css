@@ -44,6 +44,14 @@
     padding: 14px 24px;
     border: 1px solid #C4C4C4;
     border-radius: 28px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+.rulles-button:last-child {
+    margin-right: 0;
+}
+.rulles-button:hover {
+    border: 1px solid #F0C630;
 }
 
 .advantages-list {
@@ -65,7 +73,7 @@
 }
 .advantages::before {
     content:"";
-    background-image: url("../img/pluse.svg");
+    background-image: url("../img/icons/pluse.svg");
     width: 32px;
     height: 32px;
     position: absolute;
@@ -73,7 +81,7 @@
 }
 .limitations::before {
     content:"";
-    background-image: url("../img/minuse.svg");
+    background-image: url("../img/icons/minuse.svg");
     width: 32px;
     height: 32px;
     position: absolute;
@@ -98,6 +106,9 @@
     font-size: 20px;
     background-color: inherit;
     max-height: 56px;
+}
+.registration-callback:hover {
+    border: 1px solid #F0C630;
 }
 
 .locations-section {
@@ -132,7 +143,7 @@
 }
 .locations-list-item::before {
     content:"";
-    background-image: url("../img/blue-metroline.svg");
+    background-image: url("../img/icons/blue-metroline.svg");
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
@@ -143,6 +154,10 @@
 .metro-station {
     border-bottom: 1px dashed #5F62AC;
     color: #5F62AC;
+    cursor: pointer;
+}
+.metro-station:hover {
+    border-bottom: none;
 }
 .travel-time {
     opacity: 0.5;
@@ -173,14 +188,72 @@
 .lookingMore__list-item:nth-child(4n) {
     margin-right: 0;
 }
-.complex-name {
+.object-item__link-title {
+    text-decoration: none;
+}
+.object-item__link-title:hover {
+    color: #5F62AC;
+}
+.object-item__complex-name {
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 4px;
+    margin-top: 16px;
 }
-.lookingMore-img {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.9) 100%);
+.object-item__address {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
 }
-
+.object-item__location {
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    margin: 0;
+}
+.object-item__metroline {
+    padding-left: 15px;
+}
+.object-item__metroline::before {
+    content:"";
+    background-image: url("../img/icons/orange-metroline.svg");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.object-item__time-go {
+    padding-left: 15px;
+    margin-left: 7px;
+}
+.object-item__time-go::before {
+    content:"";
+    background-image: url("../img/icons/time-go.svg");
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    left: 45%;
+    top: 2px;
+}
+.object-item__img-container {
+    margin: 0;
+    position: relative;
+}
+.object-item__img-descriprion {
+    position: absolute;
+    padding: 0 16px 16px 16px;
+    bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.object-item__price {
+    font-weight: 700;
+}
 
 .form-section {
     padding: 56px 0;
@@ -208,6 +281,21 @@
 .select-val {
     color: #000;
 }
+.checkbox {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 24px;
+}
+.callback-form__remember {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    float: left;
+}
+.callback-form__remember:checked {
+    background-color: initial;
+}
 .inputs {
     background-color: transparent;
     border: none;
@@ -226,4 +314,23 @@
     font-weight: 400;
     border: none;
     margin-top: 24px;
+}
+
+
+/* icons */
+
+.icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+}
+
+.first-icon {
+    left: 8px;
+    top: 8px;
+}
+
+.second-icon {
+    left: 28px;
+    top: 8px;
 }
