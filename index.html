@@ -70,7 +70,7 @@
                 <h2 class="visually-hidden">
                     Плюсы и минусы
                 </h2>
-                <div>
+                <div class="buttons-container">
                     <button class="rulles-button button-active">
                         Плюсы и минусы
                     </button>
@@ -123,30 +123,26 @@
                     Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39
                 </p>
                 <div class="locations-metroline">
-                    <ul class="locations-list">
-                        <li class="locations-list-item">
-                            <span class="metro-station">
-                                Шелепиха
-                            </span>      
-                            <span class="travel-time">
-                                5 минут пешком
-                            </span>                  
-                        </li>
-                    </ul>
-                    <ul class="locations-list">
-                        <li class="locations-list-item">
-                            <span class="metro-station">
-                                Фили
-                            </span> 
-                            <span class="travel-time">
-                                6 минут на транспорте
-                            </span>
-                        </li>
-                    </ul>
+                    <p class="locations-list">
+                        <span class="metro-station">
+                            Шелепиха
+                        </span>      
+                        <span class="travel-time">
+                            5 минут пешком
+                        </span>                  
+                    </p>
+                    <p class="locations-list">
+                        <span class="metro-station">
+                            Фили
+                        </span> 
+                        <span class="travel-time">
+                            6 минут на транспорте
+                        </span>
+                    </p>
                 </div>
-                <div class="ya-map">
+                <!-- <div class="ya-map">
                     <img src="img/map.png" alt="Карта">
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -170,7 +166,53 @@
                                 <path  d="m 8.9011139,9.8831523 c -0.264565,-0.26205 -0.707655,-0.01773 -0.627246,0.3458597 l 2.7280561,12.33555 c 0.03781,0.171 0.1894,0.2927 0.36452,0.2927 h 9.26709 c 0.1751,0 0.3267,-0.1217 0.3645,-0.2927 l 2.7281,-12.33555 c 0.0804,-0.3635897 -0.3627,-0.6079097 -0.6273,-0.3458597 l -2.9112,2.8834897 c -0.1039,0.10294 -0.2714,0.10294 -0.3753,0 l -3.54962,-3.5158177 c -0.1455,-0.144115 -0.37994,-0.144115 -0.52544,0 l -3.54963,3.5158177 c -0.10393,0.10294 -0.27138,0.10294 -0.37531,0 z m 4.6455401,9.7741097 c -0.11782,0 -0.21333,0.0955 -0.21333,0.2133 v 0.64 c 0,0.1179 0.09551,0.2134 0.21333,0.2134 h 4.90668 c 0.1178,0 0.2133,-0.0955 0.2133,-0.2134 v -0.64 c 0,-0.1178 -0.0955,-0.2133 -0.2133,-0.2133 z" fill="#fff" fill-rule="evenodd"/>
                             </svg>
 
-                            <img src="img/Стрешнево.png" alt="" class="lookingMore-img">
+                            <picture>
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/strechnevo-mobil@1x.webp 1x, 
+                                        img/looking-more/strechnevo-mobil@2x.webp 2x">
+
+
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/strechnevo-middle@1x.webp 1x, 
+                                        img/looking-more/strechnevo-middle@2x.webp 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/strechnevo-mobil@1x.webp 1x, 
+                                        img/looking-more/strechnevo-mobil@2x.webp 2x">
+
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    srcset="
+                                        img/looking-more/strechnevo-mobil@1x.png 1x, 
+                                        img/looking-more/strechnevo-mobil@2x.png 2x" >
+        
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    srcset="
+                                        img/looking-more/strechnevo-middle@1x.png 1x, 
+                                        img/looking-more/strechnevo-middle@2x.png 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    srcset="
+                                        img/looking-more/strechnevo-mobil@1x.png 1x, 
+                                        img/looking-more/strechnevo-mobil@2x.png 2x" >
+        
+                                <img 
+                                    src="img/looking-more/strechnevo-middle@1x.png" 
+                                    srcset="img/looking-more/strechnevo-middle@2x.webp 2x" 
+                                    alt="Люберецкий" 
+                                    class="">
+                            </picture>
                             
                             <figcaption class="object-item__img-descriprion">
                                 <span class="object-item__price">
@@ -208,7 +250,52 @@
                                 <line x1="18.312309" y1="9.8963642" x2="13.68769" y2="22.103636" fill="#fff" stroke="#fff" stroke-width="2.0999999" stroke-linecap="round"/>
                             </svg>
 
-                            <img src="img/Новое медведково.png" alt="" class="lookingMore-img">
+                            <picture>
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/medvedcovo-mobil@1x.webp 1x, 
+                                        img/looking-more/medvedcovo-mobil@2x.webp 2x">
+
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/medvedcovo-middle@1x.webp 1x, 
+                                        img/looking-more/medvedcovo-middle@2x.webp 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/medvedcovo-mobil@1x.webp 1x, 
+                                        img/looking-more/medvedcovo-mobil@2x.webp 2x">
+
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    srcset="
+                                        img/looking-more/medvedcovo-mobil@1x.png 1x, 
+                                        img/looking-more/medvedcovo-mobil@2x.png 2x" >
+        
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    srcset="
+                                        img/looking-more/medvedcovo-middle@1x.png 1x, 
+                                        img/looking-more/medvedcovo-middle@2x.png 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    srcset="
+                                        img/looking-more/medvedcovo-mobil@1x.png 1x, 
+                                        img/looking-more/medvedcovo-mobil@2x.png 2x" >
+        
+                                <img 
+                                    src="img/looking-more/medvedcovo-middle@1x.png" 
+                                    srcset="img/looking-more/medvedcovo-middle@2x.webp 2x" 
+                                    alt="Измайловский парк" 
+                                    class="">
+                            </picture>
 
                             <figcaption class="object-item__img-descriprion">
                                 <span class="object-item__price">
@@ -240,7 +327,52 @@
                     </li>
                     <li class="lookingMore__list-item object-item">
                         <figure class="object-item__img-container">
-                            <img src="img/Люберецкий.png" alt="" class="lookingMore-img">
+                            <picture>
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/luberci-mobil@1x.webp 1x, 
+                                        img/looking-more/luberci-mobil@2x.webp 2x">
+
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/luberci-middle@1x.webp 1x, 
+                                        img/looking-more/luberci-middle@2x.webp 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/luberci-mobil@1x.webp 1x, 
+                                        img/looking-more/luberci-mobil@2x.webp 2x">
+        
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    srcset="
+                                        img/looking-more/luberci-middle@1x.png 1x, 
+                                        img/looking-more/luberci-middle@2x.png 2x">
+
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    srcset="
+                                        img/looking-more/luberci-mobil@1x.png 1x, 
+                                        img/looking-more/luberci-mobil@2x.png 2x" >
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    srcset="
+                                        img/looking-more/luberci-mobil@1x.png 1x, 
+                                        img/looking-more/luberci-mobil@2x.png 2x" >
+        
+                                <img 
+                                    src="img/looking-more/luberci-middle@1x.png" 
+                                    srcset="img/looking-more/luberci-middle@2x.webp 2x" 
+                                    alt="Люберецкий" 
+                                    class="">
+                            </picture>
                             
                             <figcaption class="object-item__img-descriprion">
                                 <span class="object-item__price">
@@ -272,7 +404,52 @@
                     </li>
                     <li class="lookingMore__list-item object-item">
                         <figure class="object-item__img-container">
-                            <img src="img/Измайловский лес.png" alt="" class="lookingMore-img">
+                            <picture>
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/izmailov-mobil@1x.webp 1x, 
+                                        img/looking-more/izmailov-mobil@2x.webp 2x">
+
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/izmailov-middle@1x.webp 1x, 
+                                        img/looking-more/izmailov-middle@2x.webp 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    type="image/webp" 
+                                    srcset="
+                                        img/looking-more/izmailov-mobil@1x.webp 1x, 
+                                        img/looking-more/izmailov-mobil@2x.webp 2x">
+
+                                <source 
+                                    media="(min-width: 1105px)" 
+                                    srcset="
+                                        img/looking-more/izmailov-mobil@1x.png 1x, 
+                                        img/looking-more/izmailov-mobil@2x.png 2x" >
+        
+                                <source 
+                                    media="(min-width: 768px) and (max-width: 1104px)" 
+                                    srcset="
+                                        img/looking-more/izmailov-middle@1x.png 1x, 
+                                        img/looking-more/izmailov-middle@2x.png 2x">
+        
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    srcset="
+                                        img/looking-more/izmailov-mobil@1x.png 1x, 
+                                        img/looking-more/izmailov-mobil@2x.png 2x" >
+        
+                                <img 
+                                    src="img/looking-more/izmailov-middle@1x.png" 
+                                    srcset="img/looking-more/izmailov-middle@2x.webp 2x" 
+                                    alt="Люберецкий" 
+                                    class="">
+                            </picture>
                             
                             <figcaption class="object-item__img-descriprion">
                                 <span class="object-item__price">
@@ -326,7 +503,7 @@
                     </select>
                     <input type="text" name="phone" size="15" required placeholder="Ваш телефон" class="inputs callback-form__big-line">
                     <label for="" class="callback-form__big-line checkbox">
-                        <input type="checkbox" class="callback-form__remember">Напомните мне за 2 часа до визита
+                        <input type="checkbox" class="callback-form__remember" checked>Напомните мне за 2 часа до визита
                     </label>
                     <button class="inputs-button" type="submit">
                         Отправить

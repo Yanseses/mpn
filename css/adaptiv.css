@@ -1,0 +1,182 @@
+@media (max-width: 1104px) {
+    .fixed-container {
+        width: 704px;
+    }
+    .banner-section::before { 
+        background-image: url("../img/First banner middle.png");
+    }
+    .title-h1 {
+        font-size: 40px;
+    }
+    .advantages-list {
+        width: 100%;
+    }
+    .limitations-list {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .lookingMore__list-item {
+        max-width: 50%;
+        margin-right: 0;
+    }
+    .rules-section {
+        padding: 48px;
+    }
+    .regView-section {
+        padding: 48px 0;
+    }
+    .registration-title {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .locations-section {
+        padding: 48px 0;
+    }
+    .form-section {
+        padding: 48px 0;
+    }
+    .form-title {
+        width: 100%;
+    }
+    .callback-form {
+        width: 100%;
+    }
+    .new-buildings {
+        width: 60%;
+    }
+    .popular {
+        width: 40%;
+    }
+    .address {
+        width: 60%;
+    }
+    .copuright-list {
+        width: 40%;
+    }
+    .new-buildings__list {
+        margin-bottom: 24px;
+    }
+    .popular__list {
+        margin-bottom: 24px;
+    }
+    .object-item__time-go::before {
+        left: 35%;
+    }
+    .lookingMore__list-item:nth-child(-n+2) {
+        margin-bottom: 24px;
+    }
+    .object-item__img-descriprion {
+        padding: 0 90px 16px 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .js-mobilMenu {
+        background-image: url("../img/mobil-burger.svg");
+        display: block;
+        width: 22px;
+        height: 15px;
+        border: none;
+        background-color: inherit;
+    }
+    .header {
+        padding: 17.5px 26.5px;
+    }
+    .fixed-container {
+        width: 280px;
+    }
+    .navigation {
+        margin-top: 0;
+    }
+    .banner-section::before { 
+        background-image: url("../img/First banner mobil.png");
+        top: 49px;
+    }
+    .title-h1 {
+        font-size: 24px;
+    }
+    .logo-icon {
+        width: 27.5px;
+        height: 13px;
+    }
+    .text-block {
+        padding: 96px 0 109px;
+    }
+    .rules-section {
+        padding: 31px 0;
+    }
+    .navigation__nav-list {
+        display: none;
+    }
+    .lookingMore__list-item {
+        max-width: 261px;
+        margin-right: 0;
+    }
+    .buttons-container {
+        overflow-x: scroll;
+        height: 45px;
+    }
+    .advantages-list {
+        font-size: 14px;
+    }
+    .limitations-list {
+        font-size: 14px;
+    }
+    .advantages::before {
+        left: -40px;
+        top: -8px;
+    }
+    .limitations::before {
+        left: -40px;
+        top: -8px;
+    }
+    .regView-section {
+        padding: 32px 0;
+    }
+    .locations-section {
+        padding: 32px 0;
+    }
+    .lookingMore-section {
+        padding: 32px 0;
+    }
+    .form-section {
+        padding: 32px 0;
+    }
+    .registration-title {
+        font-size: 20px;
+    }
+    .registration-callback {
+        width: 100%;
+    }
+    .locations-title {
+        font-size: 20px;
+    }
+    .locations-list {
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+    .object-item__time-go::before {
+        left: 44%;
+    }
+    .callback-form__small-line {
+        width: 100%;
+    }
+    .inputs-button {
+        width: 100%;
+    }
+    .object-item__img-descriprion {
+        padding: 0 16px 16px 16px;
+    }
+    .new-buildings {
+        width: 100%;
+    }
+    .popular {
+        width: 100%;
+    }
+    .address {
+        width: 100%;
+    }
+    .copuright-list {
+        width: 100%;
+    }
+}
