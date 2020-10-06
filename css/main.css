@@ -2,12 +2,12 @@
     background-color: #5F62AC;
     font-family: "Roboto";
     color: #ffffff;
-    margin-top: -80px;
+    margin-top: -81px;
 }
 
 .banner-section::before {
     content: "";
-    background-image: url("../img/First big banner.png");
+    background-image: url("../img/First banner large.png");
     background-repeat: no-repeat;
     background-position-x: right;
     position: absolute;
@@ -16,6 +16,7 @@
 }
 
 .text-block {
+    position: relative;
     z-index: 2;
     padding: 220px 0 248px;
 }
@@ -58,18 +59,25 @@
     list-style: none;
     font-size: 24px;
     margin-top: 33px;
+    margin-bottom: 0;
     width: 40%;
 }
 .limitations-list {
     list-style: none;
     font-size: 24px;
     margin-top: 33px;
+    margin-bottom: 0;
     width: 50%;
 }
-
+.limitations-list:first-child {
+    margin-top: 0;
+}
 .listIteam {
     position: relative;
     margin-top: 24px;
+}
+.listIteam:first-child {
+    margin-top: 0;
 }
 .advantages::before {
     content:"";
@@ -123,9 +131,11 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 5px;
 }
 .locations-metroline {
     display: flex;
+    flex-wrap: wrap;
 }
 .locations-list {
     padding-left: 20px;
@@ -134,14 +144,14 @@
     color: #000000;
     position: relative;
     margin-left: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .locations-list:first-child {
     margin-left: 0;
 }
-.locations-list-item {
-    display: inline-block;
-}
-.locations-list-item::before {
+
+.locations-list::before {
     content:"";
     background-image: url("../img/icons/blue-metroline.svg");
     background-repeat: no-repeat;
@@ -179,11 +189,11 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .lookingMore__list-item {
     display: inline-block;
     max-width: 261px;
-    margin-right: 20px;
 }
 .lookingMore__list-item:nth-child(4n) {
     margin-right: 0;
