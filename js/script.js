@@ -45,11 +45,5 @@ $(document).ready(function(){
             modalMap.hide();
         }
     }
-    
-    if ($(window).width() < 768) {
-        $('.js-map-button').text('')
-    } else {
-        $('.js-map-button').text('Объекты инфраструктуры')
-    }
 
 });
