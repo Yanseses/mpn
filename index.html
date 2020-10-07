@@ -144,6 +144,9 @@
         </section>
 
         <section class="map-section">
+            <h2 class="visually-hidden">
+                Расположение ЖК
+            </h2>
             <div class="ya-map">
                 <picture>
                     <source 
@@ -549,21 +552,21 @@
                     Запишитесь на просмотр и оцените всё сами!
                 </h2>
 
-                <form action="" class="callback-form">
+                <form method="POST" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" class="callback-form">
                     <input type="text" name="userName" size="50" required placeholder="Как вас зовут?" class="inputs callback-form__big-line">
-                    <select name="date" id="" class="inputs callback-form__small-line">
+                    <select name="date" id="date-val" class="inputs callback-form__small-line">
                         <option value="14 сентября" class="select-val" selected>16 сентября</option>
                         <option value="15 сентября" class="select-val">17 сентября</option>
                         <option value="16 сентября" class="select-val">18 сентября</option>
                     </select>
-                    <select name="time" id="" class="inputs callback-form__small-line">
+                    <select name="time" id="time-val" class="inputs callback-form__small-line">
                         <option value="14:00" class="select-val">12:00</option>
                         <option value="14:30" class="select-val" selected>14:00</option>
                         <option value="15:00" class="select-val">16:00</option>
                     </select>
                     <input type="text" name="phone" size="15" required placeholder="Ваш телефон" class="inputs callback-form__big-line">
-                    <label for="" class="callback-form__big-line checkbox">
-                        <input type="checkbox" class="callback-form__remember" checked>Напомните мне за 2 часа до визита
+                    <label for="check" class="callback-form__big-line checkbox">
+                        <input type="checkbox" class="callback-form__remember" id="check" checked>Напомните мне за 2 часа до визита
                     </label>
                     <button class="inputs-button" type="submit">
                         Отправить
@@ -647,9 +650,9 @@
             </div>
 
             <address class="address">
-                <h3 class="footer-titles">
+                <p class="footer-titles">
                     Рекламный отдел
-                </h3>
+                </p>
                 <ul class="address__list">
                     <li class="address__list-item">
                         <a href="tel:84959874247" class="list-item__links">
