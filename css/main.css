@@ -61,6 +61,9 @@
     margin-bottom: 0;
     width: 40%;
 }
+.limitations {
+    color: rgba(0,0,0, 0.5);
+}
 .limitations-list {
     list-style: none;
     font-size: 24px;
