@@ -47,3 +47,9 @@ $(document).ready(function(){
     }
 
 });
+
+if ($(window).width() < 768) {
+    $('.js-map-button').text('')
+} else {
+    $('.js-map-button').text('Объекты инфраструктуры')
+}
