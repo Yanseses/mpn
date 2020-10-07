@@ -68,9 +68,15 @@
     .object-item__img-descriprion {
         padding: 0 90px 16px 16px;
     }
+    .modal-list {
+        left: calc(25% + 5px);
+    }
     .map-section {
         width: 704px;
         padding-bottom: 48px;
+    }
+    .map-button {
+        left: calc(30% - 5px);
     }
 }
 
@@ -215,5 +221,16 @@
     .map-section {
         width: 280px;
         padding-bottom: 32px;
+    }
+    .modal-list {
+        width: 100%;
+        left: 0;
+        padding-top: 10px;
+    }
+    .map-button {
+        left: calc(40% - 5px);
+    }
+    .map-button::before {
+        top: 3px;
     }
 }
