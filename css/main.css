@@ -180,7 +180,9 @@
     margin: 0 auto;
     display: table;
 }
-
+.map-img {
+    width: 100%;
+}
 .lookingMore-section {
     padding-bottom: 56px;
 }
