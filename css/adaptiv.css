@@ -228,6 +228,7 @@
         padding-top: 10px;
     }
     .map-button {
+        font-size: 0;
         left: calc(40% - 5px);
     }
     .map-button::before {
