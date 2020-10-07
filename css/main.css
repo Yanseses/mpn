@@ -17,7 +17,6 @@
 
 .text-block {
     position: relative;
-    z-index: 2;
     padding: 220px 0 248px;
 }
 
@@ -120,7 +119,7 @@
 }
 
 .locations-section {
-    padding: 56px 0;
+    padding: 56px 0 24px;
 }
 .locations-title {
     font-size: 32px;
@@ -172,8 +171,11 @@
 .travel-time {
     opacity: 0.5;
 }
-.ya-map {
-    margin-top: 24px;
+.map-section {
+    padding-bottom: 56px;
+    width: 1104px;
+    margin: 0 auto;
+    display: table;
 }
 
 .lookingMore-section {
@@ -325,6 +327,61 @@
     border: none;
     margin-top: 24px;
 }
+.ya-map {
+    position: relative;
+}
+.map-button {
+    position: absolute;
+    left: calc(40% - 5px);
+    bottom: 16px;
+    border-radius: 24px;
+    padding: 8px 24px 8px 58px;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+.map-button::before {
+    content: "";
+    background-image: url("../img/icons/arrov-top.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.js-modal-map {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.modal-list {
+    position: absolute;
+    width: 375px;
+    height: 100%;
+    left: calc(35% + 5px);
+    top: 0;
+    background-color: #5F62AC;
+    padding-top: 48px;
+    padding-left: 34px;
+    padding-right: 48px;
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+.modal-list-item {
+    list-style: none;
+    margin-top: 16px;
+}
+.modal-list-item:first-child {
+    margin-top: 0;
+}
+.modal-checkbox {
+    margin-right: 12px;
+}
 
 
 /* icons */
@@ -334,12 +391,10 @@
     height: 32px;
     position: absolute;
 }
-
 .first-icon {
     left: 8px;
     top: 8px;
 }
-
 .second-icon {
     left: 28px;
     top: 8px;
