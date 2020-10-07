@@ -22,11 +22,11 @@
         </svg>
 
         <nav class="navigation">
-            <button class="js-mobilMenu">
+            <button class="js-mobilMenu" aria-label="Меню свернуто" aria-expanded="false">
 
             </button>
 
-            <ul class="navigation__nav-list">
+            <ul class="navigation__nav-list js-list-menu">
                 <li class="navigation__list-item">
                     <a href="#rules">
                         Описание
@@ -140,9 +140,69 @@
                         </span>
                     </p>
                 </div>
-                <!-- <div class="ya-map">
-                    <img src="img/map.png" alt="Карта">
-                </div> -->
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="ya-map">
+                <picture>
+                    <source 
+                        media="(min-width: 768px)" 
+                        type="image/webp" 
+                        srcset="
+                            img/map/map-middle@1x.webp 1x, 
+                            img/map/map-middle@2x.webp 2x">
+
+                    <source 
+                        media="(max-width: 767px)" 
+                        type="image/webp" 
+                        srcset="
+                            img/map/map-mobil@1x.webp 1x, 
+                            img/map/map-mobil@2x.webp 2x">
+
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="
+                            img/map/map-middle@1x.png 1x, 
+                            img/map/map-middle@2x.png 2x">
+
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                            img/map/map-mobil@1x.png 1x, 
+                            img/map/map-mobil@2x.png 2x" >
+
+                    <img 
+                        src="img/map/map-middle@1x.png" 
+                        srcset="img/map/map-middle@2x.webp 2x" 
+                        alt="Карта" 
+                        class="">
+                </picture>
+                <button class="map-button js-map-button" type="button">
+                    Объекты инфраструктуры
+                </button>
+                <div class="js-modal-map">
+                    <ul class="modal-list">
+                        <li class="modal-list-item">
+                            <input type="checkbox" class="modal-checkbox" checked>Школы
+                        </li>
+                        <li class="modal-list-item">
+                            <input type="checkbox" class="modal-checkbox" checked>Аптеки
+                        </li>
+                        <li class="modal-list-item">
+                            <input type="checkbox" class="modal-checkbox">Высшие учебные заведения
+                        </li>
+                        <li class="modal-list-item">
+                            <input type="checkbox" class="modal-checkbox">Больницы
+                        </li>
+                        <li class="modal-list-item">
+                            <input type="checkbox" class="modal-checkbox" checked>Магазины
+                        </li>
+                        <li class="modal-list-item">
+                            <input type="checkbox" class="modal-checkbox" checked>Фитнес
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -613,6 +673,9 @@
                 </li>
             </ul>
         </div>
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/script.js"></script>
     </footer>
 </body>
 </html>

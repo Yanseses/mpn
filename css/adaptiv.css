@@ -68,11 +68,15 @@
     .object-item__img-descriprion {
         padding: 0 90px 16px 16px;
     }
+    .map-section {
+        width: 704px;
+        padding-bottom: 48px;
+    }
 }
 
 @media (max-width: 767px) {
     .js-mobilMenu {
-        background-image: url("../img/mobil-burger.svg");
+        background-image: url("../img/icons/mobil-burger.svg");
         display: block;
         width: 22px;
         height: 15px;
@@ -90,7 +94,7 @@
     }
     .banner-section::before { 
         background-image: url("../img/First banner mobil.png");
-        top: 49px;
+        top: 50px;
     }
     .title-h1 {
         font-size: 24px;
@@ -113,7 +117,8 @@
         margin-right: 0;
     }
     .buttons-container {
-        overflow-x: scroll;
+        display: flex;
+        overflow: scroll;
         height: 45px;
     }
     .advantages-list {
@@ -178,5 +183,37 @@
     }
     .copuright-list {
         width: 100%;
+    }
+    .navigation__nav-list {
+        background-color: #4A439D;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 50px;
+        padding: 32px 24px;
+    }
+    .navigation__list-item {
+        display: block;
+        margin-top: 16px;
+    }
+    .navigation__list-item:first-child {
+        margin-top: 0;
+    }
+    .burger-active {
+        background-image: url("../img/icons/burger-active.svg");
+        width: 32px;
+        height: 32px;
+    }
+    .js-burger {
+        padding: 8px 26.5px;
+    }
+    .js-logo-size {
+        width: 32px;
+        height: 32px;
+    }
+    .map-section {
+        width: 280px;
+        padding-bottom: 32px;
     }
 }
